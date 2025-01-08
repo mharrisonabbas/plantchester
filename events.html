@@ -3,29 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Events</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/pkd7smj.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 </head>
-<body>
-    <header>
-        <a href="index.html">
-            <img src="PCR.png" id="logo">
-        </a>
 
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="scran.html">Scran</a></li>  
-            <li><a href="timeline.html">Timeline</a></li>
-            <li><a href="events.html">Events</a></li>  
-        </ul>
+<body>
+    <!-- Navigation Bar-->
+    <header>
+        <div>
+            <a href="index.html"> <!-- This turns my logo mark into a link that takes the user to the 'Home' page-->
+                <img src="images/PCR.png" id="logo" alt="logo-mark">
+            </a>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="scran.html">Scran</a>
+                </li>  
+                <li class="nav-item">
+                    <a href="timeline.html">Timeline</a>
+                </li>
+                <li class="nav-item">
+                    <a href="events.html">Events</a>
+                </li> 
+                <li><a id="cta-button" href="index.html">Subscribe!</a></li> 
+            </ul>
+        </nav>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <script src="main.js"></script>
     </header>
+
+    <!-- Events Landing Page -->
+    <div class="event"> 
+        <img src="images/bakery.jpg" alt="A plate of fluffy pancakes topped with fresh fruit and drizzled with syrup, ready to be enjoyed.">
+        
+        <div class="event-head">
+            <div class="event-title">WHAT'S ON?</div>
+            <div class="event-caption"> Keep updated on Manchester’s vegan festivals, markets and events! From bustling food fairs to chilled craft markets, we’ve go the scoop on where to find the best plant-based vibes. Get discovering your local community gems and make mates along the way. Let’s get exploring! </div>
+        </div>
+    </div>
+
+    <!-- Upcoming events -->
+    <section class="events-links">
+        <h2 class="heading-h3">Upcoming Events:</h2>
+        <div class="events-columns">
+            <div class="events-column">
+                <a href="https://www.grubmcr.com/extraveganza" target="_blank"><img src="images/events2.jpg" alt=""></a>
+                <h3>GRUB Extravaganza</h3>
+                <p>24-26 January 2025</p>
+            </div>
+            <div class="events-column">
+                <a href="https://www.veganeventsuk.co.uk/stockport-vegan-festival/" target="_blank"><img src="images/events1.jpg" alt="A hand holding a delicious cinnamon swirl pastry, with a golden crust wrapped in paper."></a>
+                <h3>Stockport Vegan Festival</h3>
+                <p>Sunday 9 February 2025</p>
+            </div>
+            <div class="events-column">
+                <a href="https://www.veganeventsuk.co.uk/product/northern-vegan-festival-manchester-2025/" target="_blank"><img src="images/events3.jpg" alt=""></a>
+                <h3>Northern (Manchester) Vegan Festival</h3>
+                <p>Saturday 19 April 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="event-markets">
+        <div class="columns-event-markets">
+            <div class="column-event-markets">
+                <h2 class="heading-h2">01 GRUB Food Fair</h2>
+                <p class="paragraph">GRUB is Manchester's secret vegan streetfood haven based at The Red Bank Project in Cheetham Hill. Open Wednesday to Sunday, this chilled, dog-friendly hangout with rotating food vendors and craft beers will simply blow your mind. Perfect for a weekend bite.</p>
+                <a class="ghost-button-events" href="timeline.html" target="_self">Visit Website</a>
+            </div>
+            <div class="column-event-markets">
+                <img src="images/grub.jpg" alt="A pink food truck parked on the street, ready to serve delicious meals to passersby.">
+            </div>
+        </div>
+    </section>
+
+    <section class="video-container">
+        <iframe src="https://www.youtube.com/embed/uAVKY1EW5Wc?si=2nt8U2yKdZQyKbwh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="1120" height="630"></iframe>
+    </section>
+
+    <section class="event-markets">
+        <div class="columns-event-markets">
+            <div class="column-event-markets">
+                <img src="images/activism.jpg" alt="A man and women engaged deeply in conversation on the side of the street, about veganism and community outreach.">
+            </div>
+            <div class="column-event-markets">
+                <h2 class="heading-h2">02 Awakening Compassion</h2>
+                <p class="paragraph">Awakening Compassion is a friendly outreach group based in Manchester, who hosts events every Sunday from 1pm-4pm on Market Street. Offering leaflets, placards and virtual reality headsets to spark conversations about Veganism and invite friendly discussions. Got some plant-based snacks to share? Bring them along and join the good vibes.</p>
+                <a class="ghost-button-events" href="timeline.html" target="_self">Visit Website</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="event-markets">
+        <div class="columns-event-markets">
+            <div class="column-event-markets">
+                <h2 class="heading-h2">03 Vegan and Animal Rights Conference</h2>
+                <p class="paragraph">Get stuck into the cause by attending the Vegan and Animal Rights Conference 2025, which hits Manchester from 29-20 March at the Mercure Piccadilly Hotel. Expect inspiring talks, hands-on workshops and panels with 60+ experts. Join 400+ advocates, connect and level up your activism.</p>
+                <a class="ghost-button-events" href="timeline.html" target="_self">Visit Website</a>
+            </div>
+            <div class="column-event-markets">
+                <img src="images/conference.jpg" alt="A man stands confidently before a large screen, presenting information to an attentive audience in a professional setting.">
+            </div>
+        </div>
+    </section>
 
      <!-- Footer section -->
      <footer class="footer-container">
         <div class="footer">
             <div class="footer-left">
-                <img src ="PCR2.png" alt="logo-mark">
+                <img src ="images/PCR2.png" alt="logo-mark">
                 <p> Discovering Manchester's Plant-Powered Past.</p>
             </div>
             <div class="footer-heading footer-1">
@@ -50,7 +151,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p> All rights reserved by &copy;Marina Harrison 2024</p>
+            <p> All rights reserved by &copy;Plantchester 2024</p>
         </div>
     </footer>
     

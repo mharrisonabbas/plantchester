@@ -3,118 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/pkd7smj.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 </head>
 
 <body>
+    <!-- Navigation Bar-->
     <header>
-        <a href="index.html">
-            <img src="PCR.png" id="logo">
-        </a>
+        <div>
+            <a href="index.html"> <!-- This turns my logo mark into a link that takes the user to the 'Home' page-->
+                <img src="images/PCR.png" id="logo" alt="logo-mark">
+            </a>
+        </div>
 
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="scran.html">Scran</a></li>  
-            <li><a href="timeline.html">Timeline</a></li>
-            <li><a href="events.html">Events</a></li>  
-        </ul>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="scran.html">Scran</a>
+                </li>  
+                <li class="nav-item">
+                    <a href="timeline.html">Timeline</a>
+                </li>
+                <li class="nav-item">
+                    <a href="events.html">Events</a>
+                </li> 
+                <li><a id="cta-button" href="index.html">Subscribe!</a></li> 
+            </ul>
+        </nav>
 
+        <!-- Hamburger Menu -->
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <script src="main.js"></script>
     </header>
     
-<div id="about-head">
-        <div id="display2">
-            <div id="sub-title">ABOUT</div>
+    <section class="about-head">
+        <div class="about-header">
+            <h1 class="heading-h1">ABOUT US</h1>
         </div>
-</div>
-
-<div id="about-main">
-    <div id="explore-our">
-        <h1 id="heading2"> Explore our mission & discover more about Manchester's rich history of social justice.</h1>
-            <p id="button-spacing2">
-                <a class="ghost-button-about" href="scran.html" target="_self">TIMELINE</a>
-                <a class="ghost-button-about" href="events.html" target="_self">GET INVOLVED</a>
-            </p>
     </div>
 
-    <img src="pancakes.jpg" alt="pancakes" id="about-image">
-
-</div>
-
-<!--Mission statement-->
-<div class="serious-business">
-    <div id="why-the">
-        <h1 id="heading2">Why the <strong>serious business?</strong></h1>
-    </div>
-    
-    <div id="table">
-        <table style="width:100%">
-            <tr>
-                <td style="width:60%"> 01 Environmental Impact </td>
-                <td style="width:40%"> Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </td>
-            </tr>
-            <tr> 
-                <td> 02 Animal Welfare </td>
-                <td>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </td>
-            </tr>
-            <tr>
-                <td>03 Health Benefits</td>
-                <td> Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.</td>
-            </tr>
-                
-        </table>
-    </div>
-</div>
-
-<!-- Statistics -->
-<div class="statistics">
-    <h2 class="heading-h2">Kindness has an Impact</h2> 
-    <p class="caption">in numbers</p>
-        <div class="columns-about">
-            <div class="column-about">
-                <h2 class="heading-h2">2x</h2>
-                <p class="caption">The global greenhouse emissions of animal-based foods are twice that of plant-based foods.</p>
+    <section class="about-landing">
+        <div class="columns-about-landing">
+            <div class="column-about-landing">
+                <h1 class="heading-h4"> Explore our mission & discover more about Manchester's rich history of social justice.</h1>
+                <p id="button-spacing2">
+                    <a class="ghost-button-about" href="timeline.html" target="_self">TIMELINE</a>
+                    <a class="ghost-button-about" href="events.html" target="_self">GET INVOLVED</a>
+                </p>
             </div>
-                <div class="column-about">90%</div>
-                <div class="column-about">1 bln</div>
-                <div class="column-about">60%</div>
+            <div class="column-about-landing">
+                <img src="images/noodles.jpg" alt="A vibrant salad featuring noodles and fresh vegetables, beautifully presented on a table setting.">
+            </div>
         </div>
-    </div>
-</div>
+    </section>
 
- <!-- Footer section -->
- <footer class="footer-container">
-    <div class="footer">
-        <div class="footer-left">
-            <img src ="PCR2.png" alt="logo-mark">
-            <p> Discovering Manchester's Plant-Powered Past.</p>
+    <!--Mission statement-->
+    <section class="serious-business">
+        <div id="why-the">
+            <h1 class="heading-h3">Why the serious business?</h1>
         </div>
-        <div class="footer-heading footer-1">
-            <h2>Quick Links</h2>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="scran.html">Scran</a>
-                <a href="timeline.html">Timeline</a>
-                <a href="events.html">Events</a>
+        
+        <div id="table">
+            <table style="width:100%">
+                <tr>
+                    <td class="heading-h3" style="width:50%"> 01 Environmental Impact </td>
+                    <td style="width:50%"> Veganism has a significant positive impact on the environment. It reduces greenhouse gas emissions, conserves water and lowers deforestation rates by eliminating the need for livestock farming. A plant-based diet requires fewer natural resources, helping combat climate change and preserve biodiversity. </td>
+                </tr>
+                <tr> 
+                    <td class="heading-h3"> 02 Animal Welfare </td>
+                    <td>By rejecting industries that exploit and harm animals for food, clothing and other products, it promotes compassionate living. It reduces the demand for factory farming and protects animals from suffering and slaughter. Choosing vegan helps to create a kinder world where animals are valued as sentient beings, not commodities.</td>
+                </tr>
+                <tr>
+                    <td class="heading-h3">03 Health Benefits</td>
+                    <td> A Vegan diet offers numerous health benefits, including reduced risk of heart disease, high blood pressure, and type 2 diabetes. This diet is rich in nutrients like fiber, vitamins and antioxidants, supporting overall wellbeing. It can also help with weight management and promote healthier digestion and boosting energy naturally.</td>
+                </tr>
+            </table>
         </div>
-        <div class="footer-heading footer-2">
-            <h2>Our socials</h2>
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-        </div>
-        <div class="footer-email-form">
-            <h2>Join our Newsletter</h2>
-            <input type="email" placeholder="Enter your email address" id="footer-email">
-            <input type="submit" value="Subscribe" id="footer-email-btn">
+    </section>
+
+    <!-- Statistics -->
+    <div class="statistics">
+        <h2 class="heading-h2">Kindness has an Impact</h2>
+        <h3>in numbers</h3>
+            <div class="columns-about">
+                <div class="column-about">
+                    <h2 class="heading-h2">2x</h2>
+                    <p class="caption">The global greenhouse emissions of animal-based foods are twice that of plant-based foods.</p>
+                </div>
+                <div class="column-about">
+                    <h2 class="heading-h2">90%</h2>
+                    <p class="caption">90% of the Amazon rainforest deforestation can be attributed to red meat production.</p>    
+                </div>
+                <div class="column-about">
+                    <h2 class="heading-h2">1 bln</h2>
+                    <p class="caption">1 billion animals are farmed and slaughtered every year for consumption in the UK.</p>    
+                </div>
+                <div class="column-about">
+                    <h2 class="heading-h2">60%</h2>
+                    <p class="caption">A vegan diet can be as much as 60% smaller than a meat-based one.</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="footer-bottom">
-        <p> All rights reserved by &copy;Marina Harrison 2024</p>
-    </div>
-</footer>
+    <!-- Footer section -->
+    <footer class="footer-container">
+        <div class="footer">
+            <div class="footer-left">
+                <img src ="images/PCR2.png" alt="logo-mark">
+                <p> Discovering Manchester's Plant-Powered Past.</p>
+            </div>
+            <div class="footer-heading footer-1">
+                <h2>Quick Links</h2>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="scran.html">Scran</a>
+                    <a href="timeline.html">Timeline</a>
+                    <a href="events.html">Events</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Our socials</h2>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+            </div>
+            <div class="footer-email-form">
+                <h2>Join our Newsletter</h2>
+                <input type="email" placeholder="Enter your email address" id="footer-email">
+                <input type="submit" value="Subscribe" id="footer-email-btn">
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p> All rights reserved by &copy;Plantchester 2024</p>
+        </div>
+    </footer>
 
 </body>
 </html>

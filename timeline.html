@@ -3,29 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Timeline</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/pkd7smj.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 </head>
 <body>
+    <!-- Navigation Bar-->
     <header>
-        <a href="index.html">
-            <img src="PCR.png" id="logo">
-        </a>
+        <div>
+            <a href="index.html"> <!-- This turns my logo mark into a link that takes the user to the 'Home' page-->
+                <img src="images/PCR.png" id="logo" alt="logo-mark">
+            </a>
+        </div>
 
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="scran.html">Scran</a></li>  
-            <li><a href="timeline.html">Timeline</a></li>
-            <li><a href="events.html">Events</a></li>  
-        </ul>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="scran.html">Scran</a>
+                </li>  
+                <li class="nav-item">
+                    <a href="timeline.html">Timeline</a>
+                </li>
+                <li class="nav-item">
+                    <a href="events.html">Events</a>
+                </li> 
+                <li><a id="cta-button" href="index.html">Subscribe!</a></li> 
+            </ul>
+        </nav>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <script src="main.js"></script>
     </header>
+
+    <div class="scran"> 
+        <img src="images/timeline.jpg" alt="A woman stands confidently, holding a sign advocating for animal rights, symbolizing her commitment to animal welfare.">
+        
+        <div class="scran-head">
+            <div class="scran-title">TIMELINE</div>
+        </div>
+    </div>
+
+    <section class="'">
+        <div class="timeline_intro">
+            <h2 class="heading-h2">A Brief Social History of Manchester</h2>
+            <p class="paragraph">Manchester has long been a city of radical change, championing social justice and equality. Known as the birthplace of the Industrial Revolution, it also ignited movements for workers’ rights, suffrage, and socialism. Figures like Friedrich Engels and the rise of the trade unions laid the groundwork for challenging societal inequalities.</p>
+            <p class="paragraph">Today, this spirit of activism lives on in the city’s vegan movement. Much like the socialists of the past, modern-day vegans challenge the status quo, advocating for ethical, sustainable choices that protect animals, people, and the planet. Veganism addresses systemic issues like climate change, food justice, and animal exploitation, echoing Manchester’s historic fight for fairness.</p>
+            <p class="paragraph">By choosing plant-based lifestyles, Mancunians continue to push boundaries, blending the city’s radical past with its progressive future—one meal at a time.</p>
+        </div>
+    </section>
+
+    <!-- Timeline section -->
+<div class="timeline">
+        <div class="checkpoint">
+            <div>
+                <h2 class="heading-h3">1800s Early Socialist Thought</h2>
+                <img src="images/1800s.jpg">
+                <p class="caption">Manchester emerged as the heart of the Industrial Revolution. Although this growth brought immense wealth, the people faced stark inequalities, poor conditions and pollution was fatal. As a centre of social reform, it fostered movements for worker’s rights, suffrage and abolition. This progressive spirit extends to today.</p>
+            </div>
+        </div>
+
+        <div class="checkpoint">
+            <div>
+                <h2 class="heading-h3">1819 Peterloo Massacre</h2>
+                <p class="caption">The Peterloo Massacre saw troops violently suppress peaceful protesters demanding political reform in Manchester. 60,000 people were attacked, symbolising the fight for justice. </p>
+            </div>
+        </div>
+
+        <div class="checkpoint">
+            <div>
+                <h2 class="heading-h3">1847 Vegetarianism</h2>
+                <p class="caption">The world’s first Vegetarian Society was headquartered in Salford, outside of Manchester, making the city the central hub for the movement. It promoted meat-free diets, paving the way for vegan ideals.</p>
+            </div>
+        </div>
+
+        <div class="checkpoint">
+            <div>
+                <h2 class="heading-h3">1960s</h2>
+                <p class="caption">In 1960s Manchester, the Counterculture movement saw another spike in Vegetarian/ Vegan numbers, as part of individual's vision of an alternative society. Embracing alternative lifestyles, rejecting consumerism and promoting ethical living, these diets gained traction as forms of resistance to industrial excess. Community fairs, activist gatherings and health food stores like Eighth Day Co-operative fostered the era’s progressive ideals.</p>
+            </div>
+        </div>
+
+        <div class="checkpoint">
+            <div>
+                <h2 class="heading-h3">2020s </h2>
+                <p class="caption">Manchester has become one of the most vegan-friendly cities in the UK, with plant-based options in nearly every restaurant. The rise of environmental awareness boosts veganism, linking diet to sustainability - echoing the social reform ethos Manchester has fostered since the 19th century.
+                </p>
+            </div>
+        </div>
+
+</div>
+ 
 
      <!-- Footer section -->
      <footer class="footer-container">
         <div class="footer">
             <div class="footer-left">
-                <img src ="PCR2.png" alt="logo-mark">
+                <img src ="images/PCR2.png" alt="logo-mark">
                 <p> Discovering Manchester's Plant-Powered Past.</p>
             </div>
             <div class="footer-heading footer-1">
@@ -50,7 +134,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p> All rights reserved by &copy;Marina Harrison 2024</p>
+            <p> All rights reserved by &copy;Plantchester 2024</p>
         </div>
     </footer>
     

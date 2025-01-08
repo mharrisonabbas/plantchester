@@ -3,113 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Scran</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/pkd7smj.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Link to Font Awesome icon library for star ratings -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
+    <!-- Navigation Bar-->
     <header>
-        <a href="index.html">
-            <img src="PCR.png" id="logo">
-        </a>
+        <div>
+            <a href="index.html"> <!-- This turns my logo mark into a link that takes the user to the 'Home' page-->
+                <img src="images/PCR.png" id="logo" alt="logo-mark">
+            </a>
+        </div>
 
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="scran.html">Scran</a></li>  
-            <li><a href="timeline.html">Timeline</a></li>
-            <li><a href="events.html">Events</a></li>  
-        </ul>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="scran.html">Scran</a>
+                </li>  
+                <li class="nav-item">
+                    <a href="timeline.html">Timeline</a>
+                </li>
+                <li class="nav-item">
+                    <a href="events.html">Events</a>
+                </li> 
+                <li><a id="cta-button" href="index.html">Subscribe!</a></li> 
+            </ul>
+        </nav>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <script src="main.js"></script>
     </header>
 
 <div class="scran"> 
-    <img src="pancakes.jpg">
+    <img src="images/pancakes.jpg" alt="A plate of fluffy pancakes topped with fresh fruit and drizzled with syrup, ready to be enjoyed.">
     
-    <div id="display-scran">
-        <div id="scran-title">SENSATIONAL SCRAN</div>
+    <div class="scran-head">
+        <div class="scran-title">SENSATIONAL SCRAN</div>
     </div>
 </div>
 
-<!-- This is my infinate scrolling text page-divider-->
-<div class="scrolling-text-container">
-    <div class="scrolling-text-inner" style="--marquee-speed: 50s; --direction:scroll-right" role="marquee">
-        <div class="scrolling-text">
-            <div class="scrolling-text-item">BUDGET BITES</div>
-            <div class="scrolling-text-item">•</div>
-            <div class="scrolling-text-item">BUDGET BITES</div>
-            <div class="scrolling-text-item">•</div>
-            <div class="scrolling-text-item">BUDGET BITES</div>
-            <div class="scrolling-text-item">•</div>
-            <div class="scrolling-text-item">BUDGET BITES</div>
-            <div class="scrolling-text-item">•</div>
-            <div class="scrolling-text-item">BUDGET BITES</div>
-            <div class="scrolling-text-item">•</div>
-            <div class="scrolling-text-item">BUDGET BITES</div>
-            <div class="scrolling-text-item">•</div>
-            <div class="scrolling-text-item">BUDGET BITES</div>
-            <div class="scrolling-text-item">•</div>
-            <div class="scrolling-text-item">BUDGET BITES</div>
-            <div class="scrolling-text-item">•</div>
-            <div class="scrolling-text-item">BUDGET BITES</div>
-            <div class="scrolling-text-item">•</div>
-        
-        </div>
+<section class="'">
+    <div class="scran_intro">
+        <h2 class="heading-h2">Let's Dive Right In</h2>
+        <p class="paragraph">Welcome to <i>Sensational Scran</i> : your new go-to-guide for Manchester’s best vegan eats! From quirky cafes to street food gems, we're here to help you discover mouthwatering spots that’ll make you question why you ever ate meat in the first place. Whether you're a fully-fledged vegan or just curious, dive-in and explore the tastiest treats this great city has to offer!
+        </p>
     </div>
+</section>
+
+<section  class="map">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1PKECOr7BGG9cjhJ1O5YFVw4jUhJcJ58&ehbc=2E312F&noprof=1" width="1250" height="500"></iframe>
+</section>
+
+<!-- Page Divider-->
+<div class="page-divider-container2">
+    <div class="page-divider-inner2">
+        <div>
+            <p>BUDGET BITES • BUDGET BITES • BUDGET BITES • BUDGET BITES • BUDGET BITES • BUDGET BITES • BUDGET BITES • BUDGET BITES •</p>
+        </div>
+    </div>        
 </div>
 
 
 <!--'Budget Bites' page section-->
 <div class="budget-bites">
     <div class="budget-bites-container">
-        <div class="front-image">
-            <div id="budget-bites-left">
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <h2 class="heading-h3">8TH DAY COOPERATIVE</h2>
-                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                <p id="button-spacing1">
-                    <a class="ghost-button-scran" href="https://8thday.coop" target="_blank">VIEW WEBSITE</a>
-                </p>
-            </div>
-            <div id="budget-bites-right">
-                <img id="coop-image" src="quiche.jpg" alt="">
-            </div>
+        <div id="budget-bites-left">
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <h2 class="heading-h3">8TH DAY COOPERATIVE</h2>
+            <p class="paragraph"> This cosy, worker-owned cafe and shop is at the top of our list for simply delicious vegan food - from hearty dhals and soups, to homemade vegan desserts. Packed full with eco-friendly goodies, this historical spot is perfect for feel-good, guilt-free dining. </p>
+            <p id="button-spacing1">
+                <a class="ghost-button-scran" href="https://8thday.coop" target="_blank">View Website</a>
+            </p>
         </div>
-        <div class="image-hover">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.856107092268!2d-2.240123823396409!3d53.471031672325715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1ecb5567f17%3A0x9d0bf485902847bc!2sThe%20Eighth%20Day%20Shop%20%26%20Cafe!5e0!3m2!1sen!2suk!4v1732177932323!5m2!1sen!2suk" allowfullscreen="" loading="lazy"></iframe>
+        <div id="budget-bites-right">
+            <img id="coop-image" src="images/quiche.jpg" alt="A freshly baked vegetable quiche garnished with greens, displayed on a rustic wooden table.">
         </div>
     </div>
 </div>
 
 <!-- This is my infinate scrolling text page-divider-->
-<div class="scrolling-text-container">
-    <div class="scrolling-text-inner" style="--marquee-speed: 50s; --direction:scroll-right" role="marquee">
-        <div class="scrolling-text">
-            <div class="scrolling-text-item">OUR FAVS</div>
-            <div class="scrolling-text-item">•</div>
-            <div class="scrolling-text-item">OUR FAVS</div>
-            <div class="scrolling-text-item">•</div>
-            <div class="scrolling-text-item">OUR FAVS</div>
-            <div class="scrolling-text-item">•</div>
-            <div class="scrolling-text-item">OUR FAVS</div>
-            <div class="scrolling-text-item">•</div>
-            <div class="scrolling-text-item">OUR FAVS</div>
-            <div class="scrolling-text-item">•</div>
-            <div class="scrolling-text-item">OUR FAVS</div>
-            <div class="scrolling-text-item">•</div>
-            <div class="scrolling-text-item">OUR FAVS</div>
-            <div class="scrolling-text-item">•</div>
-            <div class="scrolling-text-item">OUR FAVS</div>
-            <div class="scrolling-text-item">•</div>
-            <div class="scrolling-text-item">OUR FAVS</div>
-            <div class="scrolling-text-item">•</div>
-        
+<div class="page-divider-container">
+    <div class="page-divider-inner">
+        <div>
+            <p>OUR FAVS • OUR FAVS • OUR FAVS • OUR FAVS • OUR FAVS • OUR FAVS • OUR FAVS • OUR FAVS • OUR FAVS • OUR FAVS •</p>
         </div>
-    </div>
-</div>
+    </div>        
+</div> 
 
 <!--'Our Favs' page section x4-->
 <div class="our-favs">
@@ -121,14 +118,14 @@
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
             <h2 class="heading-h3">THE HIP HOP CHIP SHOP</h2>
-            <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+            <p class="caption">Craving vegan comfort food with a twist? Then gorge yourself on award-winning plant-based takes on chippy classics, in a fun, music-filled atmosphere. </p>
             <p id="button-spacing1">
-                <a class="ghost-button-scran2" href="https://8thday.coop" target="_blank">VIEW WEBSITE</a>
+                <a class="ghost-button-scran2" href="https://8thday.coop" target="_blank">View Website</a>
             </p>
         </div>
 
         <div id="chippy-right">
-            <img id="coop-image" src="quiche.jpg" alt="">
+            <img id="coop-image" src="images/chippy.jpg" alt="A basket filled with crispy fish alternative and golden fries, accompanied by a small container of dipping sauce.">
         </div>
     </div>
     
@@ -140,14 +137,14 @@
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
             <h2 class="heading-h3">BUNDOBUST</h2>
-            <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="caption">Head to Manchester's Bundobust if you are looking for vibrant Indian street food and craft beer. This fully veggie menu is created perfectly for sharing with friends for the ultimate experience. </p>
             <p id="button-spacing1">
-                <a class="ghost-button-scran2" href="https://8thday.coop" target="_blank">VIEW WEBSITE</a>
+                <a class="ghost-button-scran2" href="https://8thday.coop" target="_blank">View Website</a>
             </p>
         </div>
 
         <div id="indian-right">
-            <img id="coop-image" src="quiche.jpg" alt="">
+            <img id="coop-image" src="images/curry.jpg" alt="Three bowls of vibrant yellow curry, arranged on a wooden table and garnished with corriander.">
         </div>
     </div>
 </div>
@@ -159,16 +156,15 @@
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
             <h2 class="heading-h3">PUREZZA</h2>
-            <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="caption">Purezza is our go-to choice for heavenly vegan pizza! Think gooey plant-based cheese, bold toppings and a chilled vibe, this pizzeria is the perfect place for an indulgent feast or fun date-night spot.</p>
             <p id="button-spacing1">
-                <a class="ghost-button-scran2" href="https://8thday.coop" target="_blank">VIEW WEBSITE</a>
+                <a class="ghost-button-scran2" href="https://8thday.coop" target="_blank">View Website</a>
             </p>
         </div>
 
         <div id="chippy-right">
-            <img id="coop-image" src="quiche.jpg" alt="">
+            <img id="coop-image" src="images/pizza.jpg" alt="A wooden cutting board displaying 4 slices of freshly baked pizza, showcasing its golden crust and vibrant toppings.">
         </div>
     </div>
     
@@ -179,15 +175,15 @@
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
-            <h2 class="heading-h3">THE HIP HOP CHIP SHOP</h2>
-            <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2 class="heading-h3">WHOLESOME JUNKIES</h2>
+            <p class="caption">Wholesome Junkies is a must-visit for all plant-based food enthusiasts, serving next-level vegan comfort food - from epic burgers to wings.</p>
             <p id="button-spacing1">
-                <a class="ghost-button-scran2" href="https://8thday.coop" target="_blank">VIEW WEBSITE</a>
+                <a class="ghost-button-scran2" href="https://8thday.coop" target="_blank">View Website</a>
             </p>
         </div>
 
         <div id="indian-right">
-            <img id="coop-image" src="quiche.jpg" alt="">
+            <img id="coop-image" src="images/burger.jpg" alt="A man holds a colourful burger loaded with various vegetables, showecasing a wholesome meal.">
         </div>
     </div>
 </div>
@@ -196,7 +192,7 @@
     <footer class="footer-container">
         <div class="footer">
             <div class="footer-left">
-                <img src ="PCR2.png" alt="logo-mark">
+                <img src ="images/PCR2.png" alt="logo-mark">
                 <p> Discovering Manchester's Plant-Powered Past.</p>
             </div>
             <div class="footer-heading footer-1">
@@ -221,7 +217,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p> All rights reserved by &copy;Marina Harrison 2024</p>
+            <p> All rights reserved by &copy;Plantchester 2024</p>
         </div>
     </footer>
 

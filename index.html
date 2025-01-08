@@ -3,121 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Plantchester</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/pkd7smj.css"> <!-- Added a link to my font families on Adobe Fonts-->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <script src="main.js" defer></script>
 </head>
+
 <body>
     <!-- Navigation Bar-->
     <header>
         <div>
             <a href="index.html"> <!-- This turns my logo mark into a link that takes the user to the 'Home' page-->
-                <img src="PCR.png" id="logo">
+                <img src="images/PCR.png" id="logo" alt="logo-mark">
             </a>
         </div>
-    
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="scran.html">Scran</a></li>  
-            <li><a href="timeline.html">Timeline</a></li>
-            <li><a href="events.html">Events</a></li> 
-            <li><a id="cta-button" href="index.html">Subscribe!</a></li> 
-        </ul>
 
-        <div class="hamburger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="scran.html">Scran</a>
+                </li>  
+                <li class="nav-item">
+                    <a href="timeline.html">Timeline</a>
+                </li>
+                <li class="nav-item">
+                    <a href="events.html">Events</a>
+                </li> 
+                <li><a id="cta-button" href="index.html">Subscribe!</a></li> 
+            </ul>
+        </nav>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-
+        <script src="main.js"></script>
     </header>
-    <script src="main.js"></script> 
-
-    <div id="home">
-
-        <div id="display-caption">
-            <div id="main-caption">WELCOME TO</div>
-        </div>
-
-        <div id="display">
-            <div id="main-title">
-                <h1 class="heading-h1">PLANTCHESTER</h1>
-            </div>
-        </div>
-
-    </div>
-
-    <section class="welcome">
-        <div class="columns-welcome">
-            <div class="column-welcome">
-                <img src="vegan-bowl.png" alt="A rainbow vegan salad bowl, topped with pine nuts and flowers">
-            </div>
-            <div class="column-welcome">
-                <h2 class="caption">who we are</h2>
-                <h1 class="heading-h2">EXPLORING MANCHESTER'S PLANT-POWERED PAST</h1>
-                <p class="paragraph">Uncover Manchester's green roots by exploring the city's plant-powered past. See how a rich history of social injustice and innovation has shaped the vibrant city we call home.</p>
-                <p id="button-spacing1">
-                    <a class="ghost-button" href="about.html" target="_self">LEARN MORE</a>
-                </p>
-            </div>
-        </div>
-    </section>
-
-<!-- This is my infinate scrolling text page-divider-->
-    <div class="scrolling-text-container">
-        <div class="scrolling-text-inner" style="--marquee-speed: 50s; --direction:scroll-right" role="marquee">
-            <div class="scrolling-text">
-                <div class="scrolling-text-item">PLANT PWR</div>
-                <div class="scrolling-text-item">•</div>
-                <div class="scrolling-text-item">PLANT PWR</div>
-                <div class="scrolling-text-item">•</div>
-                <div class="scrolling-text-item">PLANT PWR</div>
-                <div class="scrolling-text-item">•</div>
-                <div class="scrolling-text-item">PLANT PWR</div>
-                <div class="scrolling-text-item">•</div>
-                <div class="scrolling-text-item">PLANT PWR</div>
-                <div class="scrolling-text-item">•</div>
-                <div class="scrolling-text-item">PLANT PWR</div>
-                <div class="scrolling-text-item">•</div>
-                <div class="scrolling-text-item">PLANT PWR</div>
-                <div class="scrolling-text-item">•</div>
-                <div class="scrolling-text-item">PLANT PWR</div>
-                <div class="scrolling-text-item">•</div>
-                <div class="scrolling-text-item">PLANT PWR</div>
-                <div class="scrolling-text-item">•</div>
-            
-            </div>
+    
+<div class="home">
+    <div class="title">
+        <h2 class="paragraph">Welcome to</h2>
+        <h1 class="heading-h1">PLANTCHESTER</h1>
+        <p class="paragraph">Your ultimate guide to all of Manchester's hottest Vegan eats and the stories behind them. Discover where plant-based meets history in the city that's as vibrant as your next meal.</p>
+        <div class="button-spacing2">
+          <a class="ghost-button-index" href="scran.html" target="_self">Discover</a>  
         </div>
     </div>
 
-<!-- This is my card section, with illustrations and links styled as buttons, attempt 2-->
-<section class="home-card-links">
-    <div class="columns">
-        <div class="column">
-            <img src="city.jpg" alt="">
-            <a class="ghost-button-2" href="scran.html" target="_self">BUDGET BITES</a>
+    <div class="spark-image">
+        <img src="images/sparkle.png" alt="Sparkle illustration" width="75px">
+    </div>
+
+    <div class="bee-image">
+        <img src="images/bee.png" alt="Retro cartoon illustration of a bee, holding a peace sign." width="400px">
+    </div>
+</div>
+
+<!-- This is my welcome section-->
+<section class="welcome">
+    <div class="columns-welcome">
+        <div class="column-welcome">
+            <img src="images/vegan-bowl.jpg" alt="A rainbow vegan salad bowl accompanied with a spoon, decorated with an assortment of flowers.">
         </div>
-        <div class="column">
-            <img src="city.jpg" alt="">
-            <a class="ghost-button-2" href="timeline.html" target="_self">TIMELINE</a>
-        </div>
-        <div class="column">
-            <img src="city.jpg" alt="">
-            <a class="ghost-button-2" href="events.html" target="_self">EVENTS</a>
+        <div class="column-welcome">
+            <h2 class="caption">who we are</h2>
+            <h1 class="heading-h2">Exploring Manchester's Plant-Powered Past</h1>
+            <p class="paragraph">Uncover Manchester's green roots by exploring the city's plant-powered past. See how a rich history of social injustice and innovation has shaped the vibrant city we call home.</p>
+            <p id="button-spacing1">
+                <a class="ghost-button" href="about.html" target="_self">Learn More</a>
+            </p>
         </div>
     </div>
 </section>
 
-
-    <div id="newsletter">
-
+<!-- This is my page-divider-->
+    <div class="page-divider-container">
+        <div class="page-divider-inner">
+            <div>
+                <p>PLANT PWR • PLANT PWR • PLANT PWR • PLANT PWR • PLANT PWR • PLANT PWR • PLANT PWR • PLANT PWR •</p>
+            </div>
+        </div>        
+    </div> 
+             
+<!-- This is my card section, with illustrations and links styled as buttons, attempt 2-->
+<section class="home-card-links">
+    <div class="columns">
+        <div class="column">
+            <img src="images/city.jpg" alt="">
+            <a class="ghost-button-2" href="scran.html" target="_self">Budget Bites</a>
+        </div>
+        <div class="column">
+            <img src="images/city.jpg" alt="">
+            <a class="ghost-button-2" href="timeline.html" target="_self">History</a>
+        </div>
+        <div class="column">
+            <img src="images/city.jpg" alt="">
+            <a class="ghost-button-2" href="events.html" target="_self">What's On?</a>
+        </div>
     </div>
+</section>
+
+<!-- Onboarding Newsletter -->
+    <section class="newsletter">
+        <div class="columns-newsletter">
+            <div class="column-newsletter">
+                <h2>Let us slide in your DMs</h2>
+                <p>Sign up for our newsletter to keep up to date with all the hottest vegan scran.</p>
+                <div class="footer-email-form">
+                    <input type="email" placeholder="Enter your email address" id="footer-email">
+                    <input type="submit" value="Join" id="footer-email-btn">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer section -->
     <footer class="footer-container">
         <div class="footer">
             <div class="footer-left">
-                <img src ="PCR2.png" alt="logo-mark">
+                <img src ="images/PCR2.png" alt="logo-mark">
                 <p> Discovering Manchester's Plant-Powered Past.</p>
             </div>
             <div class="footer-heading footer-1">
@@ -142,7 +155,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p> All rights reserved by &copy;Marina Harrison 2024</p>
+            <p> All rights reserved by &copy;Plantchester 2024</p>
         </div>
     </footer>
 
